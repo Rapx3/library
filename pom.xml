@@ -101,7 +101,7 @@
                 <!-- Import dependency management from Spring Boot -->
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
-                <!--   <version>${project.parent.version}</version>-->
+                <version>${project.parent.version}</version>
             </dependency>
             <dependency>
                 <groupId>org.mapstruct</groupId>
