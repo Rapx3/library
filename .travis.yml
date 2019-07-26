@@ -9,7 +9,7 @@ addons:
 jdk:
   - openjdk8
 script:
-  - ./gradlew build --scan -s sonarqube
+  - ./gradlew build --scan -s sonarqube -Dsonar.branch.name=${BRANCH_NAME}
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
