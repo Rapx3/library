@@ -7,7 +7,7 @@ addons:
     token:
       secure: ${SONAR_TOKEN}
 jdk:
-  - oraclejdk8
+  - openjdk8
 script:
   - ./gradlew build --scan -s sonarqube
 before_cache:
